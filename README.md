@@ -38,8 +38,11 @@ mcu-debug.peripheral-viewer
 
 ## How to run Firmware
 
-1. mkdir build 
-2. cmake --preset Debug
+`cwd = bms`  
+
+1. mkdir build && cd build 
+2. cmake .. 
+3. cmake --build build
 ## How to Contribute: 
 
 Development of new features will be done on a separate branch other than main and will be merged with a pull request

@@ -38,3 +38,33 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+
+
+# BMS build artifacts 
+bms/build/
+/*.o
+/*.elf
+/*.hex
+/*.bin
+/*.map
+
+# IDE files
+/.vscode/*.*
+!.vscode/tasks.json
+/.idea/
+/*.swp
+*.log
+*.idx
+
+# CubeMX
+*.ioc
+
+# STM32CubeIDE specific
+/.settings/
+/Debug/
+/Release/
+.fingerprint
+target
+
+build/

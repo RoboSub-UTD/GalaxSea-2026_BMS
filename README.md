@@ -15,6 +15,7 @@ Ensure the following tools are installed:
 - CMake
 - gcc-arm-none-eabi
 - openocd 
+- gdb-multiarch
 - CubeMX (Standalone or included with STM32CubeIDE)
 
 > [!NOTE] 

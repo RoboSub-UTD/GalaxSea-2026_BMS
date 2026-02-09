@@ -38,7 +38,8 @@ mcu-debug.peripheral-viewer
 
 ## How to run Firmware
 
-
+1. mkdir build 
+2. cmake --preset Debug
 ## How to Contribute: 
 
 Development of new features will be done on a separate branch other than main and will be merged with a pull request

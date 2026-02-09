@@ -7,6 +7,19 @@ cmake_minimum_required(VERSION 3.22)
 # User is free to modify the file as much as necessary
 #
 
+
+# 1. Toolchain & Project Setup
+option(BUILD_TESTING "Build native executable for unit testing" OFF) # Useful for when we add platform-independent unit testing
+
+
+if(NOT CMAKE_TOOLCHAIN_FILE AND NOT BUILD_TESTING)
+  set(CMAKE_TOOLCHAIN_FILE
+        "${CMAKE_CURRENT_LIST_DIR}/cmake/gcc-arm-none-eabi.cmake"
+        CACHE FILEPATH "Toolchain file"
+  )
+endif()
+
+
 # Setup compiler settings
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)

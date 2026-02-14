@@ -12,14 +12,29 @@ Clone the project with `git clone https://github.com/RoboSub-UTD/GalaxSea-2026_B
 ## Prerequsities 
 Ensure the following tools are installed: 
 - make 
-- CMake
+- cmake
 - gcc-arm-none-eabi
 - openocd 
 - gdb-multiarch
 - CubeMX (Standalone or included with STM32CubeIDE)
 
 > [!NOTE] 
-> installation of some of these tools on a Windows environment may require use of toolchains such as MinGW or Cygwin 
+> Installation of some of these tools on a Windows environment may require use of toolchains such as MYSY2 or Cygwin. Installing Windows Subsystem for Linux (WSL2) or using a Linux virtual machine are both viable alternatives.
+ 
+
+### Installing USB Passthrough (WSL2)
+Read this section if you are setting up your build environment through WSL2. You may skip this section otherwise.
+
+USB passthrough is required for WSL2 because WSL2 is essentially a lightweight VM that does not have access to external USB devices by default. We can allow WSL to access USB devices through the use of usbipd-win which can be installed via the following link. The link also includes instructions on how to bind usb devices to WSL2.
+
+usbipd-win Installation Link: https://github.com/dorssel/usbipd-win
+
+> [!TIP]
+> Binding devices using usbipd-win requires using the command line. If you prefer to use a GUI then it's reccomended to install 
+> `wsl-usb-manager` here 
+> https://github.com/nickbeth/wsl-usb-manager
+
+
 
 ## Recommended VS Code extensions
 ```
